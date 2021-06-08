@@ -1,0 +1,24 @@
+{
+  "scenarioName": "test to validate kafka message production with avro",
+  "steps": [
+    {
+      "name": "validate_production_user_success",
+      "url": "kafka-topic:inbound-service",
+      "operation": "PRODUCE",
+      "request": {
+        "recordType": "AVRO",
+        "records": [
+          {
+            "value": {
+              "mainName": "Roberto",
+              "hometown": "São Paulo"
+            }
+          }
+        ]
+      },
+      "assertions": {
+        "status": "Ok"
+      }
+    }
+  ]
+}

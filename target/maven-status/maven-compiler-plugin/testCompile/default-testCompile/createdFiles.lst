@@ -1,0 +1,3 @@
+br\com\robligo\KafkaAvroConsumer.class
+br\com\robligo\KafkaAvroProducer.class
+br\com\robligo\UserEndpointIT.class

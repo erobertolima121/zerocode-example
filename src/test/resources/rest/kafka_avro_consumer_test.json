@@ -1,0 +1,41 @@
+{
+  "scenarioName": "teste para validar consumo de mensagem kafka com avro",
+  "steps": [
+    {
+      "name": "validar_consumo_usuario_com_sucesso",
+      "url": "kafka-topic:servico-entrada",
+      "operation": "consume",
+      "request": {
+        "consumerLocalConfigs": {
+          "recordType": "AVRO",
+          "commitSync": true,
+          "showRecordsConsumed": true,
+          "maxNoOfRetryPollsOrTimeouts": 3
+        }
+      },
+      "assertions": {
+        "size": 3,
+        "records": [
+          {
+            "value": {
+              "nomePrincipal": "Pingueira Monstro",
+              "cidadeNatal": "Salto"
+            }
+          },
+          {
+            "value": {
+              "nomePrincipal": "Pingueira Shitzu",
+              "cidadeNatal": "Salto"
+            }
+          },
+          {
+            "value": {
+              "nomePrincipal": "Caroline Cassamatta",
+              "cidadeNatal": "Salto"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "scenarioName": "teste para validar rota de criação de usuarios",
+  "steps": [
+    {
+      "name": "validar_criacao_usuario_com_sucesso",
+      "url": "/api/users",
+      "method": "POST",
+      "request": {
+        "body": {
+          "primeiroNome": "Pingo",
+          "segundoNome": "Shitzu"
+        }
+      },
+      "verify": {
+        "status": 201,
+        "body": {
+          "id": "$NOT.NULL",
+          "primeiroNome": "Pingo",
+          "segundoNome": "Shitzu"
+        }
+      }
+    },
+    {
+      "name": "validar_primeiro_nome_vazio",
+      "url": "/api/users",
+      "method": "POST",
+      "request": {
+        "body": {
+          "primeiroNome": "",
+          "segundoNome": "Shitzu"
+        }
+      },
+      "assertions": {
+        "status": 400,
+        "rawBody": "O primeiro nome não pode ser vazio!"
+      }
+    }
+  ]
+}

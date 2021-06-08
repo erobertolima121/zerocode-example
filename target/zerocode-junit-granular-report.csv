@@ -1,0 +1,11 @@
+scenarioName,scenarioLoop,stepName,stepLoop,correlationId,requestTimeStamp,responseDelayMilliSec,responseTimeStamp,result,method
+"test to validate kafka message production with avro",0,"validate_production_user_success",,"0573f13f-932d-4012-8939-32afb5003d18","2021-06-07T22:06:48.049014300",652.0,"2021-06-07T22:06:48.701015500",FAILED,PRODUCE
+"test to validate kafka message production with avro",0,"validate_production_user_success",,"21638329-9168-4905-8db2-cda296163f27","2021-06-07T22:03:48.900088200",789.0,"2021-06-07T22:03:49.690086200",FAILED,PRODUCE
+"test to validate kafka message production with avro",0,"validate_production_user_success",,"2294ce45-a3f7-46fa-8585-b79a0419d795","2021-06-07T22:00:39.952733500",858.0,"2021-06-07T22:00:40.810733900",FAILED,PRODUCE
+"test to validate kafka message production with avro",0,"validate_production_user_success",,"2dd1cbee-d619-424a-a721-e86bea419097","2021-06-07T22:05:56.919434400",866.0,"2021-06-07T22:05:57.785435900",PASSED,PRODUCE
+"test to validate kafka message production with avro",0,"validate_production_user_success",,"4b084114-fcf1-44e2-9f98-fb6a5d6c7eb5","2021-06-07T22:05:16.246780700",863.0,"2021-06-07T22:05:17.109782",PASSED,PRODUCE
+"test to validate kafka message production with avro",0,"validate_production_user_success",,"8f034195-c157-4dde-b344-b28c7913323e","2021-06-07T22:04:19.755394300",866.0,"2021-06-07T22:04:20.622392900",PASSED,PRODUCE
+"test to validate kafka message production with avro",0,"validate_production_user_success",,"b61f64c6-dc9b-450b-91f7-79637d14f578","2021-06-07T21:53:50.595630400",804.0,"2021-06-07T21:53:51.399632800",FAILED,PRODUCE
+"test to validate kafka message production with avro",0,"validate_production_user_success",,"b726e057-9400-46d1-96b7-c3ec9258a386","2021-06-07T21:52:38.318572700",792.0,"2021-06-07T21:52:39.110576900",FAILED,PRODUCE
+"test to validate kafka message production with avro",0,"validate_production_user_success",,"bf6d1b33-8020-4f96-9fb1-5fe25a95048f","2021-06-07T22:02:48.714570400",887.0,"2021-06-07T22:02:49.601573800",PASSED,PRODUCE
+"test to validate kafka message production with avro",0,"validate_production_user_success",,"eb130ada-95c7-437d-90c9-209a847632b6","2021-06-07T21:54:08.547512100",828.0,"2021-06-07T21:54:09.375514600",FAILED,PRODUCE

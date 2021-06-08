@@ -1,0 +1,2005 @@
+2021-06-07 21:52:37,052 [main] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class br.com.robligo.KafkaAvroProducer
+2021-06-07 21:52:37,793 [main] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class br.com.robligo.KafkaAvroProducer
+2021-06-07 21:52:37,877 [main] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class br.com.robligo.KafkaAvroProducer
+2021-06-07 21:52:37,894 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner - System property zerocode.junit=null
+2021-06-07 21:52:38,001 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+-------------------------- BDD: Scenario:test to validate kafka message production with avro -------------------------
+
+2021-06-07 21:52:38,010 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+-------------------------------------------------------------------------
+     Executing Scenario Count No. or parameter No. or Row No. | 0 | 
+-------------------------------------------------------------------------
+2021-06-07 21:52:38,323 [main] INFO  org.jsmart.zerocode.core.kafka.helper.KafkaConsumerHelper - 
+---------------------------------------------------------
+kafka.bootstrap.servers - 127.0.0.1:9092
+---------------------------------------------------------
+2021-06-07 21:52:38,324 [main] INFO  org.jsmart.zerocode.core.kafka.client.BasicKafkaClient - brokers:127.0.0.1:9092, topicName:inbound-service, operation:PRODUCE, requestJson:{"recordType":"JSON","records":[{"value":{"mainName":"asdasda","hometown":"wwwwwww"}}]}
+2021-06-07 21:52:38,354 [main] INFO  org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [127.0.0.1:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 10
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2021-06-07 21:52:38,440 [main] INFO  io.confluent.kafka.serializers.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2021-06-07 21:52:38,450 [main] INFO  io.confluent.kafka.serializers.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2021-06-07 21:52:38,511 [main] WARN  org.apache.kafka.clients.producer.ProducerConfig - The configuration 'kafka.acks' was supplied but isn't a known config.
+2021-06-07 21:52:38,519 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.8.0
+2021-06-07 21:52:38,519 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: ebb1d6e21cc92130
+2021-06-07 21:52:38,519 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1623113558511
+2021-06-07 21:52:38,581 [main] INFO  org.jsmart.zerocode.core.kafka.send.KafkaSender - Producer sending JSON record - ProducerRecord(topic=inbound-service, partition=null, headers=RecordHeaders(headers = [], isReadOnly = false), key=null, value={"mainName":"asdasda","hometown":"wwwwwww"}, timestamp=null)
+2021-06-07 21:52:38,910 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: Mkg_mOgRQ9KaDTzw0bJhyA
+2021-06-07 21:52:39,095 [main] ERROR org.jsmart.zerocode.core.kafka.send.KafkaSender - Error in sending record.
+org.apache.kafka.common.errors.SerializationException: Error registering Avro schema: "string"
+io.confluent.kafka.schemaregistry.client.rest.exceptions.RestClientException: Schema being registered is incompatible with an earlier schema; error code: 409
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.sendHttpRequest(RestService.java:230) ~[kafka-schema-registry-client-5.3.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.httpRequest(RestService.java:256) ~[kafka-schema-registry-client-5.3.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.registerSchema(RestService.java:356) ~[kafka-schema-registry-client-5.3.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.registerSchema(RestService.java:348) ~[kafka-schema-registry-client-5.3.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.registerSchema(RestService.java:334) ~[kafka-schema-registry-client-5.3.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.CachedSchemaRegistryClient.registerAndGetId(CachedSchemaRegistryClient.java:168) ~[kafka-schema-registry-client-5.3.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.CachedSchemaRegistryClient.register(CachedSchemaRegistryClient.java:222) ~[kafka-schema-registry-client-5.3.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.CachedSchemaRegistryClient.register(CachedSchemaRegistryClient.java:198) ~[kafka-schema-registry-client-5.3.0.jar:na]
+	at io.confluent.kafka.serializers.AbstractKafkaAvroSerializer.serializeImpl(AbstractKafkaAvroSerializer.java:70) ~[kafka-avro-serializer-5.3.0.jar:na]
+	at io.confluent.kafka.serializers.KafkaAvroSerializer.serialize(KafkaAvroSerializer.java:53) ~[kafka-avro-serializer-5.3.0.jar:na]
+	at org.apache.kafka.common.serialization.Serializer.serialize(Serializer.java:62) ~[kafka-clients-2.8.0.jar:na]
+	at org.apache.kafka.clients.producer.KafkaProducer.doSend(KafkaProducer.java:925) ~[kafka-clients-2.8.0.jar:na]
+	at org.apache.kafka.clients.producer.KafkaProducer.send(KafkaProducer.java:885) ~[kafka-clients-2.8.0.jar:na]
+	at org.apache.kafka.clients.producer.KafkaProducer.send(KafkaProducer.java:773) ~[kafka-clients-2.8.0.jar:na]
+	at org.jsmart.zerocode.core.kafka.send.KafkaSender.sendJson(KafkaSender.java:178) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.kafka.send.KafkaSender.send(KafkaSender.java:116) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.kafka.client.BasicKafkaClient.execute(BasicKafkaClient.java:32) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.engine.executor.ApiServiceExecutorImpl.executeKafkaService(ApiServiceExecutorImpl.java:59) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.executeApi(ZeroCodeMultiStepsScenarioRunnerImpl.java:443) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.executeRetry(ZeroCodeMultiStepsScenarioRunnerImpl.java:227) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.executeRetryWithSteps(ZeroCodeMultiStepsScenarioRunnerImpl.java:178) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.executeSteps(ZeroCodeMultiStepsScenarioRunnerImpl.java:162) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.runScenario(ZeroCodeMultiStepsScenarioRunnerImpl.java:125) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner.runLeafJsonTest(ZeroCodeUnitRunner.java:223) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner.runChild(ZeroCodeUnitRunner.java:127) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner.runChild(ZeroCodeUnitRunner.java:51) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner.run(ZeroCodeUnitRunner.java:107) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) ~[junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:221) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54) ~[junit-rt.jar:na]
+2021-06-07 21:52:39,102 [main] INFO  org.apache.kafka.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2021-06-07 21:52:39,109 [main] INFO  org.apache.kafka.common.metrics.Metrics - Metrics scheduler closed
+2021-06-07 21:52:39,109 [main] INFO  org.apache.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2021-06-07 21:52:39,109 [main] INFO  org.apache.kafka.common.metrics.Metrics - Metrics reporters closed
+2021-06-07 21:52:39,110 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - App info kafka.producer for producer-1 unregistered
+2021-06-07 21:52:39,111 [main] INFO  org.jsmart.zerocode.core.engine.validators.ZeroCodeValidatorImpl - Comparing results via LENIENT matchers
+2021-06-07 21:52:39,116 [main] ERROR org.jsmart.zerocode.core.runner.StepNotificationHandler - Failed assertion during Scenario:test to validate kafka message production with avro, --> Step:validate_production_user_success, Details: Assertion jsonPath '$.status' with actual value 'Failed' did not match the expected value 'Ok'
+
+2021-06-07 21:52:39,118 [main] ERROR org.jsmart.zerocode.core.runner.StepNotificationHandler - Assertion failed for :- 
+
+[test to validate kafka message production with avro] 
+	|
+	|
+	+---Step --> [validate_production_user_success] 
+
+Failures:
+--------- 
+Assertion jsonPath '$.status' with actual value 'Failed' did not match the expected value 'Ok'
+(See below 'Actual Vs Expected' to learn why this step failed) 
+
+2021-06-07 21:52:39,126 [main] WARN  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+--------- TEST-STEP-CORRELATION-ID: b726e057-9400-46d1-96b7-c3ec9258a386 ---------
+*requestTimeStamp:2021-06-07T21:52:38.318572700
+step:validate_production_user_success
+id:null
+url:kafka-topic:inbound-service
+method:PRODUCE
+request:
+{
+  "recordType" : "JSON",
+  "records" : [ {
+    "value" : {
+      "mainName" : "asdasda",
+      "hometown" : "wwwwwww"
+    }
+  } ]
+} 
+--------- TEST-STEP-CORRELATION-ID: b726e057-9400-46d1-96b7-c3ec9258a386 ---------
+Response:
+{
+  "status" : "Failed",
+  "message" : "Error registering Avro schema: \"string\"",
+  "recordCount" : null
+}
+*responseTimeStamp:2021-06-07T21:52:39.110576900 
+*Response delay:792.0 milli-secs 
+---------> Expected Response: <----------
+Assumed Payload: 
+{
+  "status" : "Ok"
+}
+Assertion Errors: 
+Assertion jsonPath '$.status' with actual value 'Failed' did not match the expected value 'Ok'
+ 
+ 
+-done-
+
+2021-06-07 21:52:39,265 [main] INFO  org.jsmart.zerocode.core.engine.listener.ZeroCodeTestReportListener - #ZeroCode: Test run completed for this runner. Generating test reports and charts. 
+* For more examples and help on automated Kafka data stream testing and Load testing visit https://zerocode.io
+2021-06-07 21:52:39,322 [main] INFO  org.jsmart.zerocode.core.domain.builders.ExtentReportsFactory - Where were the tests fired? Ans: OS:Windows 10, Architecture:amd64, Java:11.0.11, Vendor:Oracle Corporation
+2021-06-07 21:53:49,318 [main] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class br.com.robligo.KafkaAvroProducer
+2021-06-07 21:53:50,067 [main] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class br.com.robligo.KafkaAvroProducer
+2021-06-07 21:53:50,144 [main] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class br.com.robligo.KafkaAvroProducer
+2021-06-07 21:53:50,163 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner - System property zerocode.junit=null
+2021-06-07 21:53:50,268 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+-------------------------- BDD: Scenario:test to validate kafka message production with avro -------------------------
+
+2021-06-07 21:53:50,277 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+-------------------------------------------------------------------------
+     Executing Scenario Count No. or parameter No. or Row No. | 0 | 
+-------------------------------------------------------------------------
+2021-06-07 21:53:50,599 [main] INFO  org.jsmart.zerocode.core.kafka.helper.KafkaConsumerHelper - 
+---------------------------------------------------------
+kafka.bootstrap.servers - 127.0.0.1:9092
+---------------------------------------------------------
+2021-06-07 21:53:50,600 [main] INFO  org.jsmart.zerocode.core.kafka.client.BasicKafkaClient - brokers:127.0.0.1:9092, topicName:inbound-service, operation:PRODUCE, requestJson:{"recordType":"JSON","records":[{"value":{"mainName":"Roberto","hometown":"São Paulo"}}]}
+2021-06-07 21:53:50,630 [main] INFO  org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [127.0.0.1:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 10
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2021-06-07 21:53:50,719 [main] INFO  io.confluent.kafka.serializers.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2021-06-07 21:53:50,729 [main] INFO  io.confluent.kafka.serializers.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2021-06-07 21:53:50,793 [main] WARN  org.apache.kafka.clients.producer.ProducerConfig - The configuration 'kafka.acks' was supplied but isn't a known config.
+2021-06-07 21:53:50,801 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.8.0
+2021-06-07 21:53:50,801 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: ebb1d6e21cc92130
+2021-06-07 21:53:50,801 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1623113630793
+2021-06-07 21:53:50,873 [main] INFO  org.jsmart.zerocode.core.kafka.send.KafkaSender - Producer sending JSON record - ProducerRecord(topic=inbound-service, partition=null, headers=RecordHeaders(headers = [], isReadOnly = false), key=null, value={"mainName":"Roberto","hometown":"São Paulo"}, timestamp=null)
+2021-06-07 21:53:51,198 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: Mkg_mOgRQ9KaDTzw0bJhyA
+2021-06-07 21:53:51,386 [main] ERROR org.jsmart.zerocode.core.kafka.send.KafkaSender - Error in sending record.
+org.apache.kafka.common.errors.SerializationException: Error registering Avro schema: "string"
+io.confluent.kafka.schemaregistry.client.rest.exceptions.RestClientException: Schema being registered is incompatible with an earlier schema; error code: 409
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.sendHttpRequest(RestService.java:230) ~[kafka-schema-registry-client-5.3.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.httpRequest(RestService.java:256) ~[kafka-schema-registry-client-5.3.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.registerSchema(RestService.java:356) ~[kafka-schema-registry-client-5.3.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.registerSchema(RestService.java:348) ~[kafka-schema-registry-client-5.3.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.registerSchema(RestService.java:334) ~[kafka-schema-registry-client-5.3.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.CachedSchemaRegistryClient.registerAndGetId(CachedSchemaRegistryClient.java:168) ~[kafka-schema-registry-client-5.3.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.CachedSchemaRegistryClient.register(CachedSchemaRegistryClient.java:222) ~[kafka-schema-registry-client-5.3.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.CachedSchemaRegistryClient.register(CachedSchemaRegistryClient.java:198) ~[kafka-schema-registry-client-5.3.0.jar:na]
+	at io.confluent.kafka.serializers.AbstractKafkaAvroSerializer.serializeImpl(AbstractKafkaAvroSerializer.java:70) ~[kafka-avro-serializer-5.3.0.jar:na]
+	at io.confluent.kafka.serializers.KafkaAvroSerializer.serialize(KafkaAvroSerializer.java:53) ~[kafka-avro-serializer-5.3.0.jar:na]
+	at org.apache.kafka.common.serialization.Serializer.serialize(Serializer.java:62) ~[kafka-clients-2.8.0.jar:na]
+	at org.apache.kafka.clients.producer.KafkaProducer.doSend(KafkaProducer.java:925) ~[kafka-clients-2.8.0.jar:na]
+	at org.apache.kafka.clients.producer.KafkaProducer.send(KafkaProducer.java:885) ~[kafka-clients-2.8.0.jar:na]
+	at org.apache.kafka.clients.producer.KafkaProducer.send(KafkaProducer.java:773) ~[kafka-clients-2.8.0.jar:na]
+	at org.jsmart.zerocode.core.kafka.send.KafkaSender.sendJson(KafkaSender.java:178) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.kafka.send.KafkaSender.send(KafkaSender.java:116) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.kafka.client.BasicKafkaClient.execute(BasicKafkaClient.java:32) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.engine.executor.ApiServiceExecutorImpl.executeKafkaService(ApiServiceExecutorImpl.java:59) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.executeApi(ZeroCodeMultiStepsScenarioRunnerImpl.java:443) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.executeRetry(ZeroCodeMultiStepsScenarioRunnerImpl.java:227) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.executeRetryWithSteps(ZeroCodeMultiStepsScenarioRunnerImpl.java:178) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.executeSteps(ZeroCodeMultiStepsScenarioRunnerImpl.java:162) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.runScenario(ZeroCodeMultiStepsScenarioRunnerImpl.java:125) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner.runLeafJsonTest(ZeroCodeUnitRunner.java:223) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner.runChild(ZeroCodeUnitRunner.java:127) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner.runChild(ZeroCodeUnitRunner.java:51) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner.run(ZeroCodeUnitRunner.java:107) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) ~[junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:221) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54) ~[junit-rt.jar:na]
+2021-06-07 21:53:51,390 [main] INFO  org.apache.kafka.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2021-06-07 21:53:51,398 [main] INFO  org.apache.kafka.common.metrics.Metrics - Metrics scheduler closed
+2021-06-07 21:53:51,398 [main] INFO  org.apache.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2021-06-07 21:53:51,399 [main] INFO  org.apache.kafka.common.metrics.Metrics - Metrics reporters closed
+2021-06-07 21:53:51,399 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - App info kafka.producer for producer-1 unregistered
+2021-06-07 21:53:51,400 [main] INFO  org.jsmart.zerocode.core.engine.validators.ZeroCodeValidatorImpl - Comparing results via LENIENT matchers
+2021-06-07 21:53:51,405 [main] ERROR org.jsmart.zerocode.core.runner.StepNotificationHandler - Failed assertion during Scenario:test to validate kafka message production with avro, --> Step:validate_production_user_success, Details: Assertion jsonPath '$.status' with actual value 'Failed' did not match the expected value 'Ok'
+
+2021-06-07 21:53:51,406 [main] ERROR org.jsmart.zerocode.core.runner.StepNotificationHandler - Assertion failed for :- 
+
+[test to validate kafka message production with avro] 
+	|
+	|
+	+---Step --> [validate_production_user_success] 
+
+Failures:
+--------- 
+Assertion jsonPath '$.status' with actual value 'Failed' did not match the expected value 'Ok'
+(See below 'Actual Vs Expected' to learn why this step failed) 
+
+2021-06-07 21:53:51,414 [main] WARN  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+--------- TEST-STEP-CORRELATION-ID: b61f64c6-dc9b-450b-91f7-79637d14f578 ---------
+*requestTimeStamp:2021-06-07T21:53:50.595630400
+step:validate_production_user_success
+id:null
+url:kafka-topic:inbound-service
+method:PRODUCE
+request:
+{
+  "recordType" : "JSON",
+  "records" : [ {
+    "value" : {
+      "mainName" : "Roberto",
+      "hometown" : "São Paulo"
+    }
+  } ]
+} 
+--------- TEST-STEP-CORRELATION-ID: b61f64c6-dc9b-450b-91f7-79637d14f578 ---------
+Response:
+{
+  "status" : "Failed",
+  "message" : "Error registering Avro schema: \"string\"",
+  "recordCount" : null
+}
+*responseTimeStamp:2021-06-07T21:53:51.399632800 
+*Response delay:804.0 milli-secs 
+---------> Expected Response: <----------
+Assumed Payload: 
+{
+  "status" : "Ok"
+}
+Assertion Errors: 
+Assertion jsonPath '$.status' with actual value 'Failed' did not match the expected value 'Ok'
+ 
+ 
+-done-
+
+2021-06-07 21:53:51,555 [main] INFO  org.jsmart.zerocode.core.engine.listener.ZeroCodeTestReportListener - #ZeroCode: Test run completed for this runner. Generating test reports and charts. 
+* For more examples and help on automated Kafka data stream testing and Load testing visit https://zerocode.io
+2021-06-07 21:53:51,614 [main] INFO  org.jsmart.zerocode.core.domain.builders.ExtentReportsFactory - Where were the tests fired? Ans: OS:Windows 10, Architecture:amd64, Java:11.0.11, Vendor:Oracle Corporation
+2021-06-07 21:54:07,284 [main] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class br.com.robligo.KafkaAvroProducer
+2021-06-07 21:54:08,019 [main] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class br.com.robligo.KafkaAvroProducer
+2021-06-07 21:54:08,095 [main] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class br.com.robligo.KafkaAvroProducer
+2021-06-07 21:54:08,112 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner - System property zerocode.junit=null
+2021-06-07 21:54:08,220 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+-------------------------- BDD: Scenario:test to validate kafka message production with avro -------------------------
+
+2021-06-07 21:54:08,230 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+-------------------------------------------------------------------------
+     Executing Scenario Count No. or parameter No. or Row No. | 0 | 
+-------------------------------------------------------------------------
+2021-06-07 21:54:08,551 [main] INFO  org.jsmart.zerocode.core.kafka.helper.KafkaConsumerHelper - 
+---------------------------------------------------------
+kafka.bootstrap.servers - 127.0.0.1:9092
+---------------------------------------------------------
+2021-06-07 21:54:08,552 [main] INFO  org.jsmart.zerocode.core.kafka.client.BasicKafkaClient - brokers:127.0.0.1:9092, topicName:inbound-service, operation:PRODUCE, requestJson:{"recordType":"JSON","records":[{"value":{"mainName":"Roberto","hometown":"São Paulo"}}]}
+2021-06-07 21:54:08,582 [main] INFO  org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [127.0.0.1:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 10
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2021-06-07 21:54:08,669 [main] INFO  io.confluent.kafka.serializers.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2021-06-07 21:54:08,679 [main] INFO  io.confluent.kafka.serializers.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2021-06-07 21:54:08,745 [main] WARN  org.apache.kafka.clients.producer.ProducerConfig - The configuration 'kafka.acks' was supplied but isn't a known config.
+2021-06-07 21:54:08,754 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.8.0
+2021-06-07 21:54:08,754 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: ebb1d6e21cc92130
+2021-06-07 21:54:08,754 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1623113648746
+2021-06-07 21:54:08,819 [main] INFO  org.jsmart.zerocode.core.kafka.send.KafkaSender - Producer sending JSON record - ProducerRecord(topic=inbound-service, partition=null, headers=RecordHeaders(headers = [], isReadOnly = false), key=null, value={"mainName":"Roberto","hometown":"São Paulo"}, timestamp=null)
+2021-06-07 21:54:09,164 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: Mkg_mOgRQ9KaDTzw0bJhyA
+2021-06-07 21:54:09,361 [main] ERROR org.jsmart.zerocode.core.kafka.send.KafkaSender - Error in sending record.
+org.apache.kafka.common.errors.SerializationException: Error registering Avro schema: "string"
+io.confluent.kafka.schemaregistry.client.rest.exceptions.RestClientException: Schema being registered is incompatible with an earlier schema; error code: 409
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.sendHttpRequest(RestService.java:230) ~[kafka-schema-registry-client-5.3.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.httpRequest(RestService.java:256) ~[kafka-schema-registry-client-5.3.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.registerSchema(RestService.java:356) ~[kafka-schema-registry-client-5.3.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.registerSchema(RestService.java:348) ~[kafka-schema-registry-client-5.3.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.registerSchema(RestService.java:334) ~[kafka-schema-registry-client-5.3.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.CachedSchemaRegistryClient.registerAndGetId(CachedSchemaRegistryClient.java:168) ~[kafka-schema-registry-client-5.3.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.CachedSchemaRegistryClient.register(CachedSchemaRegistryClient.java:222) ~[kafka-schema-registry-client-5.3.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.CachedSchemaRegistryClient.register(CachedSchemaRegistryClient.java:198) ~[kafka-schema-registry-client-5.3.0.jar:na]
+	at io.confluent.kafka.serializers.AbstractKafkaAvroSerializer.serializeImpl(AbstractKafkaAvroSerializer.java:70) ~[kafka-avro-serializer-5.3.0.jar:na]
+	at io.confluent.kafka.serializers.KafkaAvroSerializer.serialize(KafkaAvroSerializer.java:53) ~[kafka-avro-serializer-5.3.0.jar:na]
+	at org.apache.kafka.common.serialization.Serializer.serialize(Serializer.java:62) ~[kafka-clients-2.8.0.jar:na]
+	at org.apache.kafka.clients.producer.KafkaProducer.doSend(KafkaProducer.java:925) ~[kafka-clients-2.8.0.jar:na]
+	at org.apache.kafka.clients.producer.KafkaProducer.send(KafkaProducer.java:885) ~[kafka-clients-2.8.0.jar:na]
+	at org.apache.kafka.clients.producer.KafkaProducer.send(KafkaProducer.java:773) ~[kafka-clients-2.8.0.jar:na]
+	at org.jsmart.zerocode.core.kafka.send.KafkaSender.sendJson(KafkaSender.java:178) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.kafka.send.KafkaSender.send(KafkaSender.java:116) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.kafka.client.BasicKafkaClient.execute(BasicKafkaClient.java:32) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.engine.executor.ApiServiceExecutorImpl.executeKafkaService(ApiServiceExecutorImpl.java:59) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.executeApi(ZeroCodeMultiStepsScenarioRunnerImpl.java:443) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.executeRetry(ZeroCodeMultiStepsScenarioRunnerImpl.java:227) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.executeRetryWithSteps(ZeroCodeMultiStepsScenarioRunnerImpl.java:178) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.executeSteps(ZeroCodeMultiStepsScenarioRunnerImpl.java:162) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.runScenario(ZeroCodeMultiStepsScenarioRunnerImpl.java:125) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner.runLeafJsonTest(ZeroCodeUnitRunner.java:223) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner.runChild(ZeroCodeUnitRunner.java:127) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner.runChild(ZeroCodeUnitRunner.java:51) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner.run(ZeroCodeUnitRunner.java:107) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) ~[junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:221) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54) ~[junit-rt.jar:na]
+2021-06-07 21:54:09,366 [main] INFO  org.apache.kafka.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2021-06-07 21:54:09,373 [main] INFO  org.apache.kafka.common.metrics.Metrics - Metrics scheduler closed
+2021-06-07 21:54:09,374 [main] INFO  org.apache.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2021-06-07 21:54:09,374 [main] INFO  org.apache.kafka.common.metrics.Metrics - Metrics reporters closed
+2021-06-07 21:54:09,375 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - App info kafka.producer for producer-1 unregistered
+2021-06-07 21:54:09,375 [main] INFO  org.jsmart.zerocode.core.engine.validators.ZeroCodeValidatorImpl - Comparing results via LENIENT matchers
+2021-06-07 21:54:09,381 [main] ERROR org.jsmart.zerocode.core.runner.StepNotificationHandler - Failed assertion during Scenario:test to validate kafka message production with avro, --> Step:validate_production_user_success, Details: Assertion jsonPath '$.status' with actual value 'Failed' did not match the expected value 'Ok'
+
+2021-06-07 21:54:09,382 [main] ERROR org.jsmart.zerocode.core.runner.StepNotificationHandler - Assertion failed for :- 
+
+[test to validate kafka message production with avro] 
+	|
+	|
+	+---Step --> [validate_production_user_success] 
+
+Failures:
+--------- 
+Assertion jsonPath '$.status' with actual value 'Failed' did not match the expected value 'Ok'
+(See below 'Actual Vs Expected' to learn why this step failed) 
+
+2021-06-07 21:54:09,400 [main] WARN  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+--------- TEST-STEP-CORRELATION-ID: eb130ada-95c7-437d-90c9-209a847632b6 ---------
+*requestTimeStamp:2021-06-07T21:54:08.547512100
+step:validate_production_user_success
+id:null
+url:kafka-topic:inbound-service
+method:PRODUCE
+request:
+{
+  "recordType" : "JSON",
+  "records" : [ {
+    "value" : {
+      "mainName" : "Roberto",
+      "hometown" : "São Paulo"
+    }
+  } ]
+} 
+--------- TEST-STEP-CORRELATION-ID: eb130ada-95c7-437d-90c9-209a847632b6 ---------
+Response:
+{
+  "status" : "Failed",
+  "message" : "Error registering Avro schema: \"string\"",
+  "recordCount" : null
+}
+*responseTimeStamp:2021-06-07T21:54:09.375514600 
+*Response delay:828.0 milli-secs 
+---------> Expected Response: <----------
+Assumed Payload: 
+{
+  "status" : "Ok"
+}
+Assertion Errors: 
+Assertion jsonPath '$.status' with actual value 'Failed' did not match the expected value 'Ok'
+ 
+ 
+-done-
+
+2021-06-07 21:54:09,566 [main] INFO  org.jsmart.zerocode.core.engine.listener.ZeroCodeTestReportListener - #ZeroCode: Test run completed for this runner. Generating test reports and charts. 
+* For more examples and help on automated Kafka data stream testing and Load testing visit https://zerocode.io
+2021-06-07 21:54:09,623 [main] INFO  org.jsmart.zerocode.core.domain.builders.ExtentReportsFactory - Where were the tests fired? Ans: OS:Windows 10, Architecture:amd64, Java:11.0.11, Vendor:Oracle Corporation
+2021-06-07 22:00:38,745 [main] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class br.com.robligo.KafkaAvroProducer
+2021-06-07 22:00:39,430 [main] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class br.com.robligo.KafkaAvroProducer
+2021-06-07 22:00:39,503 [main] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class br.com.robligo.KafkaAvroProducer
+2021-06-07 22:00:39,520 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner - System property zerocode.junit=null
+2021-06-07 22:00:39,627 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+-------------------------- BDD: Scenario:test to validate kafka message production with avro -------------------------
+
+2021-06-07 22:00:39,636 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+-------------------------------------------------------------------------
+     Executing Scenario Count No. or parameter No. or Row No. | 0 | 
+-------------------------------------------------------------------------
+2021-06-07 22:00:39,956 [main] INFO  org.jsmart.zerocode.core.kafka.helper.KafkaConsumerHelper - 
+---------------------------------------------------------
+kafka.bootstrap.servers - 127.0.0.1:9092
+---------------------------------------------------------
+2021-06-07 22:00:39,957 [main] INFO  org.jsmart.zerocode.core.kafka.client.BasicKafkaClient - brokers:127.0.0.1:9092, topicName:inbound-service, operation:PRODUCE, requestJson:{"recordType":"JSON","records":[{"key":"test","value":{"mainName":"Roberto","hometown":"São Paulo"}}]}
+2021-06-07 22:00:39,987 [main] INFO  org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [127.0.0.1:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 10
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2021-06-07 22:00:40,076 [main] INFO  io.confluent.kafka.serializers.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2021-06-07 22:00:40,088 [main] INFO  io.confluent.kafka.serializers.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2021-06-07 22:00:40,152 [main] WARN  org.apache.kafka.clients.producer.ProducerConfig - The configuration 'kafka.acks' was supplied but isn't a known config.
+2021-06-07 22:00:40,160 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.8.0
+2021-06-07 22:00:40,161 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: ebb1d6e21cc92130
+2021-06-07 22:00:40,161 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1623114040152
+2021-06-07 22:00:40,233 [main] INFO  org.jsmart.zerocode.core.kafka.send.KafkaSender - Producer sending JSON record - ProducerRecord(topic=inbound-service, partition=null, headers=RecordHeaders(headers = [], isReadOnly = false), key=test, value={"mainName":"Roberto","hometown":"São Paulo"}, timestamp=null)
+2021-06-07 22:00:40,563 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: Mkg_mOgRQ9KaDTzw0bJhyA
+2021-06-07 22:00:40,798 [main] ERROR org.jsmart.zerocode.core.kafka.send.KafkaSender - Error in sending record.
+org.apache.kafka.common.errors.SerializationException: Error registering Avro schema: "string"
+io.confluent.kafka.schemaregistry.client.rest.exceptions.RestClientException: Schema being registered is incompatible with an earlier schema; error code: 409
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.sendHttpRequest(RestService.java:230) ~[kafka-schema-registry-client-5.3.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.httpRequest(RestService.java:256) ~[kafka-schema-registry-client-5.3.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.registerSchema(RestService.java:356) ~[kafka-schema-registry-client-5.3.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.registerSchema(RestService.java:348) ~[kafka-schema-registry-client-5.3.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.registerSchema(RestService.java:334) ~[kafka-schema-registry-client-5.3.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.CachedSchemaRegistryClient.registerAndGetId(CachedSchemaRegistryClient.java:168) ~[kafka-schema-registry-client-5.3.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.CachedSchemaRegistryClient.register(CachedSchemaRegistryClient.java:222) ~[kafka-schema-registry-client-5.3.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.CachedSchemaRegistryClient.register(CachedSchemaRegistryClient.java:198) ~[kafka-schema-registry-client-5.3.0.jar:na]
+	at io.confluent.kafka.serializers.AbstractKafkaAvroSerializer.serializeImpl(AbstractKafkaAvroSerializer.java:70) ~[kafka-avro-serializer-5.3.0.jar:na]
+	at io.confluent.kafka.serializers.KafkaAvroSerializer.serialize(KafkaAvroSerializer.java:53) ~[kafka-avro-serializer-5.3.0.jar:na]
+	at org.apache.kafka.common.serialization.Serializer.serialize(Serializer.java:62) ~[kafka-clients-2.8.0.jar:na]
+	at org.apache.kafka.clients.producer.KafkaProducer.doSend(KafkaProducer.java:925) ~[kafka-clients-2.8.0.jar:na]
+	at org.apache.kafka.clients.producer.KafkaProducer.send(KafkaProducer.java:885) ~[kafka-clients-2.8.0.jar:na]
+	at org.apache.kafka.clients.producer.KafkaProducer.send(KafkaProducer.java:773) ~[kafka-clients-2.8.0.jar:na]
+	at org.jsmart.zerocode.core.kafka.send.KafkaSender.sendJson(KafkaSender.java:178) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.kafka.send.KafkaSender.send(KafkaSender.java:116) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.kafka.client.BasicKafkaClient.execute(BasicKafkaClient.java:32) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.engine.executor.ApiServiceExecutorImpl.executeKafkaService(ApiServiceExecutorImpl.java:59) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.executeApi(ZeroCodeMultiStepsScenarioRunnerImpl.java:443) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.executeRetry(ZeroCodeMultiStepsScenarioRunnerImpl.java:227) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.executeRetryWithSteps(ZeroCodeMultiStepsScenarioRunnerImpl.java:178) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.executeSteps(ZeroCodeMultiStepsScenarioRunnerImpl.java:162) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.runScenario(ZeroCodeMultiStepsScenarioRunnerImpl.java:125) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner.runLeafJsonTest(ZeroCodeUnitRunner.java:223) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner.runChild(ZeroCodeUnitRunner.java:127) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner.runChild(ZeroCodeUnitRunner.java:51) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner.run(ZeroCodeUnitRunner.java:107) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) ~[junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:221) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54) ~[junit-rt.jar:na]
+2021-06-07 22:00:40,802 [main] INFO  org.apache.kafka.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2021-06-07 22:00:40,808 [main] INFO  org.apache.kafka.common.metrics.Metrics - Metrics scheduler closed
+2021-06-07 22:00:40,809 [main] INFO  org.apache.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2021-06-07 22:00:40,809 [main] INFO  org.apache.kafka.common.metrics.Metrics - Metrics reporters closed
+2021-06-07 22:00:40,810 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - App info kafka.producer for producer-1 unregistered
+2021-06-07 22:00:40,811 [main] INFO  org.jsmart.zerocode.core.engine.validators.ZeroCodeValidatorImpl - Comparing results via LENIENT matchers
+2021-06-07 22:00:40,816 [main] ERROR org.jsmart.zerocode.core.runner.StepNotificationHandler - Failed assertion during Scenario:test to validate kafka message production with avro, --> Step:validate_production_user_success, Details: Assertion jsonPath '$.status' with actual value 'Failed' did not match the expected value 'Ok'
+
+2021-06-07 22:00:40,817 [main] ERROR org.jsmart.zerocode.core.runner.StepNotificationHandler - Assertion failed for :- 
+
+[test to validate kafka message production with avro] 
+	|
+	|
+	+---Step --> [validate_production_user_success] 
+
+Failures:
+--------- 
+Assertion jsonPath '$.status' with actual value 'Failed' did not match the expected value 'Ok'
+(See below 'Actual Vs Expected' to learn why this step failed) 
+
+2021-06-07 22:00:40,824 [main] WARN  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+--------- TEST-STEP-CORRELATION-ID: 2294ce45-a3f7-46fa-8585-b79a0419d795 ---------
+*requestTimeStamp:2021-06-07T22:00:39.952733500
+step:validate_production_user_success
+id:null
+url:kafka-topic:inbound-service
+method:PRODUCE
+request:
+{
+  "recordType" : "JSON",
+  "records" : [ {
+    "key" : "test",
+    "value" : {
+      "mainName" : "Roberto",
+      "hometown" : "São Paulo"
+    }
+  } ]
+} 
+--------- TEST-STEP-CORRELATION-ID: 2294ce45-a3f7-46fa-8585-b79a0419d795 ---------
+Response:
+{
+  "status" : "Failed",
+  "message" : "Error registering Avro schema: \"string\"",
+  "recordCount" : null
+}
+*responseTimeStamp:2021-06-07T22:00:40.810733900 
+*Response delay:858.0 milli-secs 
+---------> Expected Response: <----------
+Assumed Payload: 
+{
+  "status" : "Ok"
+}
+Assertion Errors: 
+Assertion jsonPath '$.status' with actual value 'Failed' did not match the expected value 'Ok'
+ 
+ 
+-done-
+
+2021-06-07 22:00:40,965 [main] INFO  org.jsmart.zerocode.core.engine.listener.ZeroCodeTestReportListener - #ZeroCode: Test run completed for this runner. Generating test reports and charts. 
+* For more examples and help on automated Kafka data stream testing and Load testing visit https://zerocode.io
+2021-06-07 22:00:41,054 [main] INFO  org.jsmart.zerocode.core.domain.builders.ExtentReportsFactory - Where were the tests fired? Ans: OS:Windows 10, Architecture:amd64, Java:11.0.11, Vendor:Oracle Corporation
+2021-06-07 22:02:47,490 [main] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class br.com.robligo.KafkaAvroProducer
+2021-06-07 22:02:48,186 [main] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class br.com.robligo.KafkaAvroProducer
+2021-06-07 22:02:48,272 [main] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class br.com.robligo.KafkaAvroProducer
+2021-06-07 22:02:48,288 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner - System property zerocode.junit=null
+2021-06-07 22:02:48,395 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+-------------------------- BDD: Scenario:test to validate kafka message production with avro -------------------------
+
+2021-06-07 22:02:48,405 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+-------------------------------------------------------------------------
+     Executing Scenario Count No. or parameter No. or Row No. | 0 | 
+-------------------------------------------------------------------------
+2021-06-07 22:02:48,718 [main] INFO  org.jsmart.zerocode.core.kafka.helper.KafkaConsumerHelper - 
+---------------------------------------------------------
+kafka.bootstrap.servers - 127.0.0.1:9092
+---------------------------------------------------------
+2021-06-07 22:02:48,719 [main] INFO  org.jsmart.zerocode.core.kafka.client.BasicKafkaClient - brokers:127.0.0.1:9092, topicName:inbound-service, operation:PRODUCE, requestJson:{"recordType":"JSON","records":[{"value":{"mainName":"Roberto","hometown":"São Paulo"}}]}
+2021-06-07 22:02:48,750 [main] INFO  org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [127.0.0.1:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 10
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2021-06-07 22:02:48,833 [main] INFO  io.confluent.kafka.serializers.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2021-06-07 22:02:48,844 [main] INFO  io.confluent.kafka.serializers.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2021-06-07 22:02:48,906 [main] WARN  org.apache.kafka.clients.producer.ProducerConfig - The configuration 'kafka.acks' was supplied but isn't a known config.
+2021-06-07 22:02:48,914 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.8.0
+2021-06-07 22:02:48,914 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: ebb1d6e21cc92130
+2021-06-07 22:02:48,914 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1623114168906
+2021-06-07 22:02:48,979 [main] INFO  org.jsmart.zerocode.core.kafka.send.KafkaSender - Producer sending JSON record - ProducerRecord(topic=inbound-service, partition=null, headers=RecordHeaders(headers = [], isReadOnly = false), key=null, value={"mainName":"Roberto","hometown":"São Paulo"}, timestamp=null)
+2021-06-07 22:02:49,310 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: JVd5cxKzSS6ovVCJhZxYpA
+2021-06-07 22:02:49,579 [main] INFO  org.jsmart.zerocode.core.kafka.send.KafkaSender - Record was sent to partition- 0, with offset- 0 
+2021-06-07 22:02:49,590 [main] INFO  org.jsmart.zerocode.core.kafka.send.KafkaSender - deliveryDetails- {"status":"Ok","recordMetadata":{"offset":0,"timestamp":1623114169312,"serializedKeySize":-1,"serializedValueSize":52,"topicPartition":{"hash":874692642,"partition":0,"topic":"inbound-service"}}}
+2021-06-07 22:02:49,591 [main] INFO  org.apache.kafka.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2021-06-07 22:02:49,597 [main] INFO  org.apache.kafka.common.metrics.Metrics - Metrics scheduler closed
+2021-06-07 22:02:49,598 [main] INFO  org.apache.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2021-06-07 22:02:49,598 [main] INFO  org.apache.kafka.common.metrics.Metrics - Metrics reporters closed
+2021-06-07 22:02:49,599 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - App info kafka.producer for producer-1 unregistered
+2021-06-07 22:02:49,601 [main] INFO  org.jsmart.zerocode.core.engine.validators.ZeroCodeValidatorImpl - Comparing results via LENIENT matchers
+2021-06-07 22:02:49,604 [main] INFO  org.jsmart.zerocode.core.runner.StepNotificationHandler - 
+***Step PASSED - Scenario:test to validate kafka message production with avro -> validate_production_user_success
+2021-06-07 22:02:49,606 [main] WARN  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+--------- TEST-STEP-CORRELATION-ID: bf6d1b33-8020-4f96-9fb1-5fe25a95048f ---------
+*requestTimeStamp:2021-06-07T22:02:48.714570400
+step:validate_production_user_success
+id:null
+url:kafka-topic:inbound-service
+method:PRODUCE
+request:
+{
+  "recordType" : "JSON",
+  "records" : [ {
+    "value" : {
+      "mainName" : "Roberto",
+      "hometown" : "São Paulo"
+    }
+  } ]
+} 
+--------- TEST-STEP-CORRELATION-ID: bf6d1b33-8020-4f96-9fb1-5fe25a95048f ---------
+Response:
+{
+  "status" : "Ok",
+  "recordMetadata" : {
+    "offset" : 0,
+    "timestamp" : 1623114169312,
+    "serializedKeySize" : -1,
+    "serializedValueSize" : 52,
+    "topicPartition" : {
+      "hash" : 874692642,
+      "partition" : 0,
+      "topic" : "inbound-service"
+    }
+  }
+}
+*responseTimeStamp:2021-06-07T22:02:49.601573800 
+*Response delay:887.0 milli-secs 
+---------> Expected Response: <----------
+{
+  "status" : "Ok"
+} 
+ 
+-done-
+
+2021-06-07 22:02:49,734 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner - 
+**FINISHED executing all Steps for [test to validate kafka message production with avro] **.
+Steps were:[validate_production_user_success]
+2021-06-07 22:02:49,736 [main] INFO  org.jsmart.zerocode.core.engine.listener.ZeroCodeTestReportListener - #ZeroCode: Test run completed for this runner. Generating test reports and charts. 
+* For more examples and help on automated Kafka data stream testing and Load testing visit https://zerocode.io
+2021-06-07 22:02:49,790 [main] INFO  org.jsmart.zerocode.core.domain.builders.ExtentReportsFactory - Where were the tests fired? Ans: OS:Windows 10, Architecture:amd64, Java:11.0.11, Vendor:Oracle Corporation
+2021-06-07 22:03:47,617 [main] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class br.com.robligo.KafkaAvroProducer
+2021-06-07 22:03:48,364 [main] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class br.com.robligo.KafkaAvroProducer
+2021-06-07 22:03:48,454 [main] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class br.com.robligo.KafkaAvroProducer
+2021-06-07 22:03:48,471 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner - System property zerocode.junit=null
+2021-06-07 22:03:48,581 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+-------------------------- BDD: Scenario:test to validate kafka message production with avro -------------------------
+
+2021-06-07 22:03:48,591 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+-------------------------------------------------------------------------
+     Executing Scenario Count No. or parameter No. or Row No. | 0 | 
+-------------------------------------------------------------------------
+2021-06-07 22:03:48,904 [main] INFO  org.jsmart.zerocode.core.kafka.helper.KafkaConsumerHelper - 
+---------------------------------------------------------
+kafka.bootstrap.servers - 127.0.0.1:9092
+---------------------------------------------------------
+2021-06-07 22:03:48,905 [main] INFO  org.jsmart.zerocode.core.kafka.client.BasicKafkaClient - brokers:127.0.0.1:9092, topicName:inbound-service, operation:PRODUCE, requestJson:{"records":[{"value":{"mainName":"Roberto","hometown":"São Paulo"}}]}
+2021-06-07 22:03:48,935 [main] INFO  org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [127.0.0.1:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 10
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2021-06-07 22:03:49,024 [main] INFO  io.confluent.kafka.serializers.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2021-06-07 22:03:49,037 [main] INFO  io.confluent.kafka.serializers.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2021-06-07 22:03:49,102 [main] WARN  org.apache.kafka.clients.producer.ProducerConfig - The configuration 'kafka.acks' was supplied but isn't a known config.
+2021-06-07 22:03:49,112 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.8.0
+2021-06-07 22:03:49,112 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: ebb1d6e21cc92130
+2021-06-07 22:03:49,112 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1623114229102
+2021-06-07 22:03:49,162 [main] WARN  org.jsmart.zerocode.core.kafka.helper.KafkaProducerHelper - Could not find path '$.recordType' in the request. returned default type 'RAW'.
+2021-06-07 22:03:49,176 [main] INFO  org.jsmart.zerocode.core.kafka.send.KafkaSender - Sending record number: 0
+
+2021-06-07 22:03:49,179 [main] INFO  org.jsmart.zerocode.core.kafka.send.KafkaSender - Synchronous Producer sending record - ProducerRecord(topic=inbound-service, partition=null, headers=RecordHeaders(headers = [], isReadOnly = false), key=null, value={mainName=Roberto, hometown=São Paulo}, timestamp=null)
+2021-06-07 22:03:49,516 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: JVd5cxKzSS6ovVCJhZxYpA
+2021-06-07 22:03:49,679 [main] ERROR org.jsmart.zerocode.core.kafka.send.KafkaSender - Error in sending record.
+java.lang.IllegalArgumentException: Unsupported Avro type. Supported types are null, Boolean, Integer, Long, Float, Double, String, byte[] and IndexedRecord
+	at io.confluent.kafka.serializers.AvroSchemaUtils.getSchema(AvroSchemaUtils.java:76) ~[kafka-avro-serializer-5.3.0.jar:na]
+	at io.confluent.kafka.serializers.KafkaAvroSerializer.serialize(KafkaAvroSerializer.java:54) ~[kafka-avro-serializer-5.3.0.jar:na]
+	at org.apache.kafka.common.serialization.Serializer.serialize(Serializer.java:62) ~[kafka-clients-2.8.0.jar:na]
+	at org.apache.kafka.clients.producer.KafkaProducer.doSend(KafkaProducer.java:925) ~[kafka-clients-2.8.0.jar:na]
+	at org.apache.kafka.clients.producer.KafkaProducer.send(KafkaProducer.java:885) ~[kafka-clients-2.8.0.jar:na]
+	at org.apache.kafka.clients.producer.KafkaProducer.send(KafkaProducer.java:773) ~[kafka-clients-2.8.0.jar:na]
+	at org.jsmart.zerocode.core.kafka.send.KafkaSender.sendRaw(KafkaSender.java:150) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.kafka.send.KafkaSender.send(KafkaSender.java:90) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.kafka.client.BasicKafkaClient.execute(BasicKafkaClient.java:32) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.engine.executor.ApiServiceExecutorImpl.executeKafkaService(ApiServiceExecutorImpl.java:59) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.executeApi(ZeroCodeMultiStepsScenarioRunnerImpl.java:443) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.executeRetry(ZeroCodeMultiStepsScenarioRunnerImpl.java:227) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.executeRetryWithSteps(ZeroCodeMultiStepsScenarioRunnerImpl.java:178) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.executeSteps(ZeroCodeMultiStepsScenarioRunnerImpl.java:162) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.runScenario(ZeroCodeMultiStepsScenarioRunnerImpl.java:125) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner.runLeafJsonTest(ZeroCodeUnitRunner.java:223) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner.runChild(ZeroCodeUnitRunner.java:127) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner.runChild(ZeroCodeUnitRunner.java:51) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner.run(ZeroCodeUnitRunner.java:107) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) ~[junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:221) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54) ~[junit-rt.jar:na]
+2021-06-07 22:03:49,683 [main] INFO  org.apache.kafka.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2021-06-07 22:03:49,689 [main] INFO  org.apache.kafka.common.metrics.Metrics - Metrics scheduler closed
+2021-06-07 22:03:49,689 [main] INFO  org.apache.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2021-06-07 22:03:49,689 [main] INFO  org.apache.kafka.common.metrics.Metrics - Metrics reporters closed
+2021-06-07 22:03:49,690 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - App info kafka.producer for producer-1 unregistered
+2021-06-07 22:03:49,690 [main] INFO  org.jsmart.zerocode.core.engine.validators.ZeroCodeValidatorImpl - Comparing results via LENIENT matchers
+2021-06-07 22:03:49,695 [main] ERROR org.jsmart.zerocode.core.runner.StepNotificationHandler - Failed assertion during Scenario:test to validate kafka message production with avro, --> Step:validate_production_user_success, Details: Assertion jsonPath '$.status' with actual value 'Failed' did not match the expected value 'Ok'
+
+2021-06-07 22:03:49,696 [main] ERROR org.jsmart.zerocode.core.runner.StepNotificationHandler - Assertion failed for :- 
+
+[test to validate kafka message production with avro] 
+	|
+	|
+	+---Step --> [validate_production_user_success] 
+
+Failures:
+--------- 
+Assertion jsonPath '$.status' with actual value 'Failed' did not match the expected value 'Ok'
+(See below 'Actual Vs Expected' to learn why this step failed) 
+
+2021-06-07 22:03:49,703 [main] WARN  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+--------- TEST-STEP-CORRELATION-ID: 21638329-9168-4905-8db2-cda296163f27 ---------
+*requestTimeStamp:2021-06-07T22:03:48.900088200
+step:validate_production_user_success
+id:null
+url:kafka-topic:inbound-service
+method:PRODUCE
+request:
+{
+  "records" : [ {
+    "value" : {
+      "mainName" : "Roberto",
+      "hometown" : "São Paulo"
+    }
+  } ]
+} 
+--------- TEST-STEP-CORRELATION-ID: 21638329-9168-4905-8db2-cda296163f27 ---------
+Response:
+{
+  "status" : "Failed",
+  "message" : "Unsupported Avro type. Supported types are null, Boolean, Integer, Long, Float, Double, String, byte[] and IndexedRecord",
+  "recordCount" : null
+}
+*responseTimeStamp:2021-06-07T22:03:49.690086200 
+*Response delay:789.0 milli-secs 
+---------> Expected Response: <----------
+Assumed Payload: 
+{
+  "status" : "Ok"
+}
+Assertion Errors: 
+Assertion jsonPath '$.status' with actual value 'Failed' did not match the expected value 'Ok'
+ 
+ 
+-done-
+
+2021-06-07 22:03:49,829 [main] INFO  org.jsmart.zerocode.core.engine.listener.ZeroCodeTestReportListener - #ZeroCode: Test run completed for this runner. Generating test reports and charts. 
+* For more examples and help on automated Kafka data stream testing and Load testing visit https://zerocode.io
+2021-06-07 22:03:49,900 [main] INFO  org.jsmart.zerocode.core.domain.builders.ExtentReportsFactory - Where were the tests fired? Ans: OS:Windows 10, Architecture:amd64, Java:11.0.11, Vendor:Oracle Corporation
+2021-06-07 22:04:18,488 [main] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class br.com.robligo.KafkaAvroProducer
+2021-06-07 22:04:19,230 [main] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class br.com.robligo.KafkaAvroProducer
+2021-06-07 22:04:19,302 [main] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class br.com.robligo.KafkaAvroProducer
+2021-06-07 22:04:19,318 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner - System property zerocode.junit=null
+2021-06-07 22:04:19,427 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+-------------------------- BDD: Scenario:test to validate kafka message production with avro -------------------------
+
+2021-06-07 22:04:19,437 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+-------------------------------------------------------------------------
+     Executing Scenario Count No. or parameter No. or Row No. | 0 | 
+-------------------------------------------------------------------------
+2021-06-07 22:04:19,759 [main] INFO  org.jsmart.zerocode.core.kafka.helper.KafkaConsumerHelper - 
+---------------------------------------------------------
+kafka.bootstrap.servers - 127.0.0.1:9092
+---------------------------------------------------------
+2021-06-07 22:04:19,760 [main] INFO  org.jsmart.zerocode.core.kafka.client.BasicKafkaClient - brokers:127.0.0.1:9092, topicName:inbound-service, operation:PRODUCE, requestJson:{"recordType":"JSON","records":[{"value":{"mainName":"Roberto1","hometown":"São Paulo"}}]}
+2021-06-07 22:04:19,790 [main] INFO  org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [127.0.0.1:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 10
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2021-06-07 22:04:19,882 [main] INFO  io.confluent.kafka.serializers.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2021-06-07 22:04:19,892 [main] INFO  io.confluent.kafka.serializers.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2021-06-07 22:04:19,954 [main] WARN  org.apache.kafka.clients.producer.ProducerConfig - The configuration 'kafka.acks' was supplied but isn't a known config.
+2021-06-07 22:04:19,963 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.8.0
+2021-06-07 22:04:19,963 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: ebb1d6e21cc92130
+2021-06-07 22:04:19,963 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1623114259955
+2021-06-07 22:04:20,031 [main] INFO  org.jsmart.zerocode.core.kafka.send.KafkaSender - Producer sending JSON record - ProducerRecord(topic=inbound-service, partition=null, headers=RecordHeaders(headers = [], isReadOnly = false), key=null, value={"mainName":"Roberto1","hometown":"São Paulo"}, timestamp=null)
+2021-06-07 22:04:20,351 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: JVd5cxKzSS6ovVCJhZxYpA
+2021-06-07 22:04:20,602 [main] INFO  org.jsmart.zerocode.core.kafka.send.KafkaSender - Record was sent to partition- 0, with offset- 1 
+2021-06-07 22:04:20,611 [main] INFO  org.jsmart.zerocode.core.kafka.send.KafkaSender - deliveryDetails- {"status":"Ok","recordMetadata":{"offset":1,"timestamp":1623114260353,"serializedKeySize":-1,"serializedValueSize":53,"topicPartition":{"hash":874692642,"partition":0,"topic":"inbound-service"}}}
+2021-06-07 22:04:20,612 [main] INFO  org.apache.kafka.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2021-06-07 22:04:20,619 [main] INFO  org.apache.kafka.common.metrics.Metrics - Metrics scheduler closed
+2021-06-07 22:04:20,619 [main] INFO  org.apache.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2021-06-07 22:04:20,620 [main] INFO  org.apache.kafka.common.metrics.Metrics - Metrics reporters closed
+2021-06-07 22:04:20,620 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - App info kafka.producer for producer-1 unregistered
+2021-06-07 22:04:20,622 [main] INFO  org.jsmart.zerocode.core.engine.validators.ZeroCodeValidatorImpl - Comparing results via LENIENT matchers
+2021-06-07 22:04:20,626 [main] INFO  org.jsmart.zerocode.core.runner.StepNotificationHandler - 
+***Step PASSED - Scenario:test to validate kafka message production with avro -> validate_production_user_success
+2021-06-07 22:04:20,627 [main] WARN  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+--------- TEST-STEP-CORRELATION-ID: 8f034195-c157-4dde-b344-b28c7913323e ---------
+*requestTimeStamp:2021-06-07T22:04:19.755394300
+step:validate_production_user_success
+id:null
+url:kafka-topic:inbound-service
+method:PRODUCE
+request:
+{
+  "recordType" : "JSON",
+  "records" : [ {
+    "value" : {
+      "mainName" : "Roberto1",
+      "hometown" : "São Paulo"
+    }
+  } ]
+} 
+--------- TEST-STEP-CORRELATION-ID: 8f034195-c157-4dde-b344-b28c7913323e ---------
+Response:
+{
+  "status" : "Ok",
+  "recordMetadata" : {
+    "offset" : 1,
+    "timestamp" : 1623114260353,
+    "serializedKeySize" : -1,
+    "serializedValueSize" : 53,
+    "topicPartition" : {
+      "hash" : 874692642,
+      "partition" : 0,
+      "topic" : "inbound-service"
+    }
+  }
+}
+*responseTimeStamp:2021-06-07T22:04:20.622392900 
+*Response delay:866.0 milli-secs 
+---------> Expected Response: <----------
+{
+  "status" : "Ok"
+} 
+ 
+-done-
+
+2021-06-07 22:04:20,760 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner - 
+**FINISHED executing all Steps for [test to validate kafka message production with avro] **.
+Steps were:[validate_production_user_success]
+2021-06-07 22:04:20,765 [main] INFO  org.jsmart.zerocode.core.engine.listener.ZeroCodeTestReportListener - #ZeroCode: Test run completed for this runner. Generating test reports and charts. 
+* For more examples and help on automated Kafka data stream testing and Load testing visit https://zerocode.io
+2021-06-07 22:04:20,874 [main] INFO  org.jsmart.zerocode.core.domain.builders.ExtentReportsFactory - Where were the tests fired? Ans: OS:Windows 10, Architecture:amd64, Java:11.0.11, Vendor:Oracle Corporation
+2021-06-07 22:05:14,985 [main] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class br.com.robligo.KafkaAvroProducer
+2021-06-07 22:05:15,722 [main] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class br.com.robligo.KafkaAvroProducer
+2021-06-07 22:05:15,802 [main] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class br.com.robligo.KafkaAvroProducer
+2021-06-07 22:05:15,819 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner - System property zerocode.junit=null
+2021-06-07 22:05:15,929 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+-------------------------- BDD: Scenario:test to validate kafka message production with avro -------------------------
+
+2021-06-07 22:05:15,938 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+-------------------------------------------------------------------------
+     Executing Scenario Count No. or parameter No. or Row No. | 0 | 
+-------------------------------------------------------------------------
+2021-06-07 22:05:16,250 [main] INFO  org.jsmart.zerocode.core.kafka.helper.KafkaConsumerHelper - 
+---------------------------------------------------------
+kafka.bootstrap.servers - 127.0.0.1:9092
+---------------------------------------------------------
+2021-06-07 22:05:16,251 [main] INFO  org.jsmart.zerocode.core.kafka.client.BasicKafkaClient - brokers:127.0.0.1:9092, topicName:inbound-service, operation:PRODUCE, requestJson:{"recordType":"JSON","records":[{"value":{"mainName":"Roberto1","hometown":"São Paulo","hometown22":"São Paulo"}}]}
+2021-06-07 22:05:16,281 [main] INFO  org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [127.0.0.1:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 10
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2021-06-07 22:05:16,369 [main] INFO  io.confluent.kafka.serializers.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2021-06-07 22:05:16,378 [main] INFO  io.confluent.kafka.serializers.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2021-06-07 22:05:16,436 [main] WARN  org.apache.kafka.clients.producer.ProducerConfig - The configuration 'kafka.acks' was supplied but isn't a known config.
+2021-06-07 22:05:16,446 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.8.0
+2021-06-07 22:05:16,447 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: ebb1d6e21cc92130
+2021-06-07 22:05:16,447 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1623114316437
+2021-06-07 22:05:16,519 [main] INFO  org.jsmart.zerocode.core.kafka.send.KafkaSender - Producer sending JSON record - ProducerRecord(topic=inbound-service, partition=null, headers=RecordHeaders(headers = [], isReadOnly = false), key=null, value={"mainName":"Roberto1","hometown":"São Paulo","hometown22":"São Paulo"}, timestamp=null)
+2021-06-07 22:05:16,843 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: JVd5cxKzSS6ovVCJhZxYpA
+2021-06-07 22:05:17,087 [main] INFO  org.jsmart.zerocode.core.kafka.send.KafkaSender - Record was sent to partition- 0, with offset- 2 
+2021-06-07 22:05:17,099 [main] INFO  org.jsmart.zerocode.core.kafka.send.KafkaSender - deliveryDetails- {"status":"Ok","recordMetadata":{"offset":2,"timestamp":1623114316844,"serializedKeySize":-1,"serializedValueSize":80,"topicPartition":{"hash":874692642,"partition":0,"topic":"inbound-service"}}}
+2021-06-07 22:05:17,100 [main] INFO  org.apache.kafka.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2021-06-07 22:05:17,106 [main] INFO  org.apache.kafka.common.metrics.Metrics - Metrics scheduler closed
+2021-06-07 22:05:17,106 [main] INFO  org.apache.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2021-06-07 22:05:17,106 [main] INFO  org.apache.kafka.common.metrics.Metrics - Metrics reporters closed
+2021-06-07 22:05:17,107 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - App info kafka.producer for producer-1 unregistered
+2021-06-07 22:05:17,109 [main] INFO  org.jsmart.zerocode.core.engine.validators.ZeroCodeValidatorImpl - Comparing results via LENIENT matchers
+2021-06-07 22:05:17,113 [main] INFO  org.jsmart.zerocode.core.runner.StepNotificationHandler - 
+***Step PASSED - Scenario:test to validate kafka message production with avro -> validate_production_user_success
+2021-06-07 22:05:17,115 [main] WARN  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+--------- TEST-STEP-CORRELATION-ID: 4b084114-fcf1-44e2-9f98-fb6a5d6c7eb5 ---------
+*requestTimeStamp:2021-06-07T22:05:16.246780700
+step:validate_production_user_success
+id:null
+url:kafka-topic:inbound-service
+method:PRODUCE
+request:
+{
+  "recordType" : "JSON",
+  "records" : [ {
+    "value" : {
+      "mainName" : "Roberto1",
+      "hometown" : "São Paulo",
+      "hometown22" : "São Paulo"
+    }
+  } ]
+} 
+--------- TEST-STEP-CORRELATION-ID: 4b084114-fcf1-44e2-9f98-fb6a5d6c7eb5 ---------
+Response:
+{
+  "status" : "Ok",
+  "recordMetadata" : {
+    "offset" : 2,
+    "timestamp" : 1623114316844,
+    "serializedKeySize" : -1,
+    "serializedValueSize" : 80,
+    "topicPartition" : {
+      "hash" : 874692642,
+      "partition" : 0,
+      "topic" : "inbound-service"
+    }
+  }
+}
+*responseTimeStamp:2021-06-07T22:05:17.109782 
+*Response delay:863.0 milli-secs 
+---------> Expected Response: <----------
+{
+  "status" : "Ok"
+} 
+ 
+-done-
+
+2021-06-07 22:05:17,247 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner - 
+**FINISHED executing all Steps for [test to validate kafka message production with avro] **.
+Steps were:[validate_production_user_success]
+2021-06-07 22:05:17,249 [main] INFO  org.jsmart.zerocode.core.engine.listener.ZeroCodeTestReportListener - #ZeroCode: Test run completed for this runner. Generating test reports and charts. 
+* For more examples and help on automated Kafka data stream testing and Load testing visit https://zerocode.io
+2021-06-07 22:05:17,304 [main] INFO  org.jsmart.zerocode.core.domain.builders.ExtentReportsFactory - Where were the tests fired? Ans: OS:Windows 10, Architecture:amd64, Java:11.0.11, Vendor:Oracle Corporation
+2021-06-07 22:05:55,674 [main] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class br.com.robligo.KafkaAvroProducer
+2021-06-07 22:05:56,385 [main] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class br.com.robligo.KafkaAvroProducer
+2021-06-07 22:05:56,464 [main] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class br.com.robligo.KafkaAvroProducer
+2021-06-07 22:05:56,483 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner - System property zerocode.junit=null
+2021-06-07 22:05:56,592 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+-------------------------- BDD: Scenario:test to validate kafka message production with avro -------------------------
+
+2021-06-07 22:05:56,602 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+-------------------------------------------------------------------------
+     Executing Scenario Count No. or parameter No. or Row No. | 0 | 
+-------------------------------------------------------------------------
+2021-06-07 22:05:56,924 [main] INFO  org.jsmart.zerocode.core.kafka.helper.KafkaConsumerHelper - 
+---------------------------------------------------------
+kafka.bootstrap.servers - 127.0.0.1:9092
+---------------------------------------------------------
+2021-06-07 22:05:56,924 [main] INFO  org.jsmart.zerocode.core.kafka.client.BasicKafkaClient - brokers:127.0.0.1:9092, topicName:inbound-service, operation:PRODUCE, requestJson:{"recordType":"JSON","records":[{"value":{"mainName":"Roberto1","hometown":123}}]}
+2021-06-07 22:05:56,955 [main] INFO  org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [127.0.0.1:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 10
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2021-06-07 22:05:57,044 [main] INFO  io.confluent.kafka.serializers.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2021-06-07 22:05:57,054 [main] INFO  io.confluent.kafka.serializers.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2021-06-07 22:05:57,113 [main] WARN  org.apache.kafka.clients.producer.ProducerConfig - The configuration 'kafka.acks' was supplied but isn't a known config.
+2021-06-07 22:05:57,121 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.8.0
+2021-06-07 22:05:57,121 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: ebb1d6e21cc92130
+2021-06-07 22:05:57,121 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1623114357114
+2021-06-07 22:05:57,185 [main] INFO  org.jsmart.zerocode.core.kafka.send.KafkaSender - Producer sending JSON record - ProducerRecord(topic=inbound-service, partition=null, headers=RecordHeaders(headers = [], isReadOnly = false), key=null, value={"mainName":"Roberto1","hometown":123}, timestamp=null)
+2021-06-07 22:05:57,510 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: JVd5cxKzSS6ovVCJhZxYpA
+2021-06-07 22:05:57,762 [main] INFO  org.jsmart.zerocode.core.kafka.send.KafkaSender - Record was sent to partition- 0, with offset- 3 
+2021-06-07 22:05:57,774 [main] INFO  org.jsmart.zerocode.core.kafka.send.KafkaSender - deliveryDetails- {"status":"Ok","recordMetadata":{"offset":3,"timestamp":1623114357512,"serializedKeySize":-1,"serializedValueSize":44,"topicPartition":{"hash":874692642,"partition":0,"topic":"inbound-service"}}}
+2021-06-07 22:05:57,774 [main] INFO  org.apache.kafka.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2021-06-07 22:05:57,783 [main] INFO  org.apache.kafka.common.metrics.Metrics - Metrics scheduler closed
+2021-06-07 22:05:57,783 [main] INFO  org.apache.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2021-06-07 22:05:57,783 [main] INFO  org.apache.kafka.common.metrics.Metrics - Metrics reporters closed
+2021-06-07 22:05:57,784 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - App info kafka.producer for producer-1 unregistered
+2021-06-07 22:05:57,786 [main] INFO  org.jsmart.zerocode.core.engine.validators.ZeroCodeValidatorImpl - Comparing results via LENIENT matchers
+2021-06-07 22:05:57,789 [main] INFO  org.jsmart.zerocode.core.runner.StepNotificationHandler - 
+***Step PASSED - Scenario:test to validate kafka message production with avro -> validate_production_user_success
+2021-06-07 22:05:57,790 [main] WARN  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+--------- TEST-STEP-CORRELATION-ID: 2dd1cbee-d619-424a-a721-e86bea419097 ---------
+*requestTimeStamp:2021-06-07T22:05:56.919434400
+step:validate_production_user_success
+id:null
+url:kafka-topic:inbound-service
+method:PRODUCE
+request:
+{
+  "recordType" : "JSON",
+  "records" : [ {
+    "value" : {
+      "mainName" : "Roberto1",
+      "hometown" : 123
+    }
+  } ]
+} 
+--------- TEST-STEP-CORRELATION-ID: 2dd1cbee-d619-424a-a721-e86bea419097 ---------
+Response:
+{
+  "status" : "Ok",
+  "recordMetadata" : {
+    "offset" : 3,
+    "timestamp" : 1623114357512,
+    "serializedKeySize" : -1,
+    "serializedValueSize" : 44,
+    "topicPartition" : {
+      "hash" : 874692642,
+      "partition" : 0,
+      "topic" : "inbound-service"
+    }
+  }
+}
+*responseTimeStamp:2021-06-07T22:05:57.785435900 
+*Response delay:866.0 milli-secs 
+---------> Expected Response: <----------
+{
+  "status" : "Ok"
+} 
+ 
+-done-
+
+2021-06-07 22:05:57,927 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner - 
+**FINISHED executing all Steps for [test to validate kafka message production with avro] **.
+Steps were:[validate_production_user_success]
+2021-06-07 22:05:57,929 [main] INFO  org.jsmart.zerocode.core.engine.listener.ZeroCodeTestReportListener - #ZeroCode: Test run completed for this runner. Generating test reports and charts. 
+* For more examples and help on automated Kafka data stream testing and Load testing visit https://zerocode.io
+2021-06-07 22:05:57,990 [main] INFO  org.jsmart.zerocode.core.domain.builders.ExtentReportsFactory - Where were the tests fired? Ans: OS:Windows 10, Architecture:amd64, Java:11.0.11, Vendor:Oracle Corporation
+2021-06-07 22:06:46,812 [main] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class br.com.robligo.KafkaAvroProducer
+2021-06-07 22:06:47,513 [main] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class br.com.robligo.KafkaAvroProducer
+2021-06-07 22:06:47,597 [main] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class br.com.robligo.KafkaAvroProducer
+2021-06-07 22:06:47,615 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner - System property zerocode.junit=null
+2021-06-07 22:06:47,724 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+-------------------------- BDD: Scenario:test to validate kafka message production with avro -------------------------
+
+2021-06-07 22:06:47,733 [main] INFO  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+-------------------------------------------------------------------------
+     Executing Scenario Count No. or parameter No. or Row No. | 0 | 
+-------------------------------------------------------------------------
+2021-06-07 22:06:48,053 [main] INFO  org.jsmart.zerocode.core.kafka.helper.KafkaConsumerHelper - 
+---------------------------------------------------------
+kafka.bootstrap.servers - 127.0.0.1:9092
+---------------------------------------------------------
+2021-06-07 22:06:48,054 [main] INFO  org.jsmart.zerocode.core.kafka.client.BasicKafkaClient - brokers:127.0.0.1:9092, topicName:inbound-service, operation:PRODUCE, requestJson:{"recordType":"AVRO","records":[{"value":{"mainName":"Roberto","hometown":"São Paulo"}}]}
+2021-06-07 22:06:48,084 [main] INFO  org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [127.0.0.1:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 10
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2021-06-07 22:06:48,174 [main] INFO  io.confluent.kafka.serializers.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2021-06-07 22:06:48,184 [main] INFO  io.confluent.kafka.serializers.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2021-06-07 22:06:48,249 [main] WARN  org.apache.kafka.clients.producer.ProducerConfig - The configuration 'kafka.acks' was supplied but isn't a known config.
+2021-06-07 22:06:48,257 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.8.0
+2021-06-07 22:06:48,257 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: ebb1d6e21cc92130
+2021-06-07 22:06:48,257 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1623114408250
+2021-06-07 22:06:48,309 [main] ERROR org.jsmart.zerocode.core.kafka.send.KafkaSender - Error in sending record.
+java.lang.RuntimeException: Unsupported recordType 'AVRO'. Chose RAW or JSON
+	at org.jsmart.zerocode.core.kafka.send.KafkaSender.send(KafkaSender.java:122) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.kafka.client.BasicKafkaClient.execute(BasicKafkaClient.java:32) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.engine.executor.ApiServiceExecutorImpl.executeKafkaService(ApiServiceExecutorImpl.java:59) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.executeApi(ZeroCodeMultiStepsScenarioRunnerImpl.java:443) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.executeRetry(ZeroCodeMultiStepsScenarioRunnerImpl.java:227) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.executeRetryWithSteps(ZeroCodeMultiStepsScenarioRunnerImpl.java:178) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.executeSteps(ZeroCodeMultiStepsScenarioRunnerImpl.java:162) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl.runScenario(ZeroCodeMultiStepsScenarioRunnerImpl.java:125) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner.runLeafJsonTest(ZeroCodeUnitRunner.java:223) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner.runChild(ZeroCodeUnitRunner.java:127) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner.runChild(ZeroCodeUnitRunner.java:51) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner.run(ZeroCodeUnitRunner.java:107) ~[zerocode-tdd-1.3.28.jar:na]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) ~[junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:221) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54) ~[junit-rt.jar:na]
+2021-06-07 22:06:48,319 [main] INFO  org.apache.kafka.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2021-06-07 22:06:48,700 [main] INFO  org.apache.kafka.common.metrics.Metrics - Metrics scheduler closed
+2021-06-07 22:06:48,700 [main] INFO  org.apache.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2021-06-07 22:06:48,700 [main] INFO  org.apache.kafka.common.metrics.Metrics - Metrics reporters closed
+2021-06-07 22:06:48,701 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - App info kafka.producer for producer-1 unregistered
+2021-06-07 22:06:48,701 [main] INFO  org.jsmart.zerocode.core.engine.validators.ZeroCodeValidatorImpl - Comparing results via LENIENT matchers
+2021-06-07 22:06:48,706 [main] ERROR org.jsmart.zerocode.core.runner.StepNotificationHandler - Failed assertion during Scenario:test to validate kafka message production with avro, --> Step:validate_production_user_success, Details: Assertion jsonPath '$.status' with actual value 'Failed' did not match the expected value 'Ok'
+
+2021-06-07 22:06:48,707 [main] ERROR org.jsmart.zerocode.core.runner.StepNotificationHandler - Assertion failed for :- 
+
+[test to validate kafka message production with avro] 
+	|
+	|
+	+---Step --> [validate_production_user_success] 
+
+Failures:
+--------- 
+Assertion jsonPath '$.status' with actual value 'Failed' did not match the expected value 'Ok'
+(See below 'Actual Vs Expected' to learn why this step failed) 
+
+2021-06-07 22:06:48,714 [main] WARN  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+--------- TEST-STEP-CORRELATION-ID: 0573f13f-932d-4012-8939-32afb5003d18 ---------
+*requestTimeStamp:2021-06-07T22:06:48.049014300
+step:validate_production_user_success
+id:null
+url:kafka-topic:inbound-service
+method:PRODUCE
+request:
+{
+  "recordType" : "AVRO",
+  "records" : [ {
+    "value" : {
+      "mainName" : "Roberto",
+      "hometown" : "São Paulo"
+    }
+  } ]
+} 
+--------- TEST-STEP-CORRELATION-ID: 0573f13f-932d-4012-8939-32afb5003d18 ---------
+Response:
+{
+  "status" : "Failed",
+  "message" : "Unsupported recordType 'AVRO'. Chose RAW or JSON",
+  "recordCount" : null
+}
+*responseTimeStamp:2021-06-07T22:06:48.701015500 
+*Response delay:652.0 milli-secs 
+---------> Expected Response: <----------
+Assumed Payload: 
+{
+  "status" : "Ok"
+}
+Assertion Errors: 
+Assertion jsonPath '$.status' with actual value 'Failed' did not match the expected value 'Ok'
+ 
+ 
+-done-
+
+2021-06-07 22:06:48,852 [main] INFO  org.jsmart.zerocode.core.engine.listener.ZeroCodeTestReportListener - #ZeroCode: Test run completed for this runner. Generating test reports and charts. 
+* For more examples and help on automated Kafka data stream testing and Load testing visit https://zerocode.io
+2021-06-07 22:06:48,930 [main] INFO  org.jsmart.zerocode.core.domain.builders.ExtentReportsFactory - Where were the tests fired? Ans: OS:Windows 10, Architecture:amd64, Java:11.0.11, Vendor:Oracle Corporation
