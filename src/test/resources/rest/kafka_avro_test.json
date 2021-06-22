@@ -9,6 +9,7 @@
         "recordType": "JSON",
         "records": [
           {
+            "key": "${RANDOM.NUMBER}",
             "value": {
               "mainName": "Roberto",
               "hometown": "São Paulo"

@@ -6,15 +6,10 @@
       "url": "kafka-topic:inbound-service",
       "operation": "PRODUCE",
       "request": {
-        "recordType": "AVRO",
-        "records": [
-          {
+        "recordType": "JSON",
             "value": {
               "mainName": "Roberto",
               "hometown": "São Paulo"
-            }
-          }
-        ]
       },
       "assertions": {
         "status": "Ok"
