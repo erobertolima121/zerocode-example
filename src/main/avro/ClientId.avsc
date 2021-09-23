@@ -1,0 +1,31 @@
+{
+  "name": "ClientId",
+  "type": "record",
+  "namespace": "br.com.robligo",
+  "fields": [
+    {
+      "name": "mainName",
+      "type": "string"
+    },
+    {
+      "name": "hometown",
+      "type": "string"
+    },
+    {
+      "name": "clientes",
+      "type": {
+        "type": "array",
+        "items": {
+          "name": "clientesLista",
+          "type": "record",
+          "fields": [
+            {
+              "name": "nome",
+              "type": "string"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

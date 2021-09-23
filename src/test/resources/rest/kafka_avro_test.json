@@ -12,7 +12,12 @@
             "key": "${RANDOM.NUMBER}",
             "value": {
               "mainName": "Roberto",
-              "hometown": "São Paulo"
+              "hometown": "São Paulo",
+              "clientes": [
+                {
+                  "nome": "sdsdsd"
+                }
+              ]
             }
           }
         ]

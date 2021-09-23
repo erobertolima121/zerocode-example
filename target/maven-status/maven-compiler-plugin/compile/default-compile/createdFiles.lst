@@ -1,2 +1,9 @@
+br\com\robligo\clientesLista$Builder.class
 br\com\robligo\ZeroCodeApplication.class
 br\com\robligo\User.class
+br\com\robligo\MyCustomKafkaClient.class
+br\com\robligo\clientesLista.class
+br\com\robligo\clientesLista$1.class
+br\com\robligo\ClientId$Builder.class
+br\com\robligo\ClientId$1.class
+br\com\robligo\ClientId.class

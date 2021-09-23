@@ -7,9 +7,20 @@
       "operation": "PRODUCE",
       "request": {
         "recordType": "JSON",
+        "records": [
+          {
+            "key": "${RANDOM.NUMBER}",
             "value": {
               "mainName": "Roberto",
-              "hometown": "São Paulo"
+              "hometown": "São Paulo",
+              "clientes": [
+                {
+                  "nome": "sdsdsd"
+                }
+              ]
+            }
+          }
+        ]
       },
       "assertions": {
         "status": "Ok"
